@@ -1,0 +1,4 @@
+
+ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/.zshrc ~/
+ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/nvim/ ~/.config/
+ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/karabiner/ ~/.config/
