@@ -9,7 +9,8 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias vim="nvim"
-alias dcp="docker-compose"
+alias dcp="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
+alias dcpn="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml up -d"
 alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"
 
 export PATH=$PATH:$(go env GOPATH)/bin
