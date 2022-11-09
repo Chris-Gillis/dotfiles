@@ -1,6 +1,4 @@
-# open terminal
-cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~ &> /dev/null
-
+shift + alt - f : yabai -m window --toggle zoom-fullscreen
 # focus window
 shift + alt - x : yabai -m window --focus recent
 shift + alt - h : yabai -m window --focus west
@@ -87,10 +85,10 @@ shift + ctrl - w : yabai -m window --move rel:0:-20
 shift + ctrl - d : yabai -m window --move rel:20:0
 
 # increase window size
-shift + alt - a : yabai -m window --resize left:-20:0
-shift + alt - s : yabai -m window --resize bottom:0:20
-shift + alt - w : yabai -m window --resize top:0:-20
-shift + alt - d : yabai -m window --resize right:20:0
+shift + alt - a : yabai -m window --resize left:-200:0
+shift + alt - s : yabai -m window --resize bottom:0:200
+shift + alt - w : yabai -m window --resize top:0:-200
+shift + alt - d : yabai -m window --resize right:200:0
 
 # decrease window size
 shift + cmd - a : yabai -m window --resize left:20:0
