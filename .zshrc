@@ -5,13 +5,15 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+# Git shortcuts
 alias gs="git status"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias gfa="git fetch --all"
+
 alias vim="nvim"
+
 alias dcp="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
-alias dcpn="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml up -d"
 alias datt="docker attach amplify-app-1"
+alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake"
 
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=/usr/local/bin:$PATH

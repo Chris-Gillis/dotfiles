@@ -28,7 +28,6 @@ vim.cmd([[
     autocmd BufNewFile,BufRead *.tsx,*.jsx,*.ts set filetype=typescriptreact
     autocmd FileType go autocmd BufWritePre <buffer> GoFmt
     autocmd FileType prisma autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
-    autocmd FileType typescriptreact autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
 ]])
 
 require("trouble").setup{}
