@@ -13,7 +13,7 @@ alias vim="nvim"
 
 alias dcp="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
 alias datt="docker attach amplify-app-1"
-alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake"
+alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"
 
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=/usr/local/bin:$PATH
