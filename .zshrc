@@ -11,9 +11,10 @@ alias gfa="git fetch --all"
 
 alias vim="nvim"
 
-alias dcp="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
+alias dc="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
 alias datt="docker attach amplify-app-1"
 alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"
+alias rt="docker exec amplify-app-1 bundle exec rspec"
 
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=/usr/local/bin:$PATH
