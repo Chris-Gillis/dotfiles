@@ -13,6 +13,7 @@ alias vim="nvim"
 
 alias dc="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
 alias datt="docker attach amplify-app-1"
+alias deab="docker exec -it amplify-app-1 bash"
 alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"
 alias rt="docker exec amplify-app-1 bundle exec rspec"
 
@@ -36,3 +37,8 @@ eval "$(rbenv init - zsh)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/chris/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

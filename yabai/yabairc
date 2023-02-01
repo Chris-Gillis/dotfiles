@@ -3,17 +3,6 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
-yabai -m space 1 --label code
-yabai -m space 2 --label social
-yabai -m space 3 --label media
-
-# window rules
-yabai -m rule --add app="^Spotify$" space=media
-yabai -m rule --add app="^Discord$" space=social
-yabai -m rule --add app="^Slack$" space=social
-yabai -m rule --add app="^Messages$" space=social
-yabai -m rule --add app="^(Calculator|System Preferences|Archive Utility)$" manage=off space=comms
-
 # signals
 yabai -m signal --add event=window_destroyed active=yes action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse &> /dev/null || yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id) &> /dev/null"
 yabai -m signal --add event=window_minimized active=yes action="if \$(yabai -m query --windows --window \$YABAI_WINDOW_ID | jq -r '.\"is-floating\"'); then yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse &> /dev/null || yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id) &> /dev/null; fi"
