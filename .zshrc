@@ -11,7 +11,7 @@ alias gfa="git fetch --all"
 
 alias vim="nvim"
 
-alias dc="docker-compose -f docker-compose-ngrok.yml -f docker-compose.yml"
+alias dc="docker compose -f docker-compose-ngrok.yml -f docker-compose.yml"
 alias datt="docker attach amplify-app-1"
 alias deab="docker exec -it amplify-app-1 bash"
 alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"

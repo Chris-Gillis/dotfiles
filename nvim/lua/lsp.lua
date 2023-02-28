@@ -10,18 +10,18 @@ rt.setup({
     }
 })
 
-require('lspconfig').sumneko_lua.setup {
-    on_attach = on_attach,
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-}
+-- require('lspconfig').sumneko_lua.setup {
+--     on_attach = on_attach,
+--     settings = {
+--         Lua = {
+--             diagnostics = {
+--                 globals = { 'vim' }
+--             }
+--         }
+--     }
+-- }
 
-local servers = { 'solargraph', 'gopls' }
+local servers = { 'gopls' }
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup{
         on_attach = on_attach,
