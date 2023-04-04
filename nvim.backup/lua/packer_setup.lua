@@ -50,10 +50,12 @@ require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+  use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
 
   -- Rails plugins
   use 'tpope/vim-rails'
-  use 'tpop/vim-bundler'
+
+  use 'github/copilot.vim'
 
   use {
     'numToStr/Comment.nvim', -- "gc" to comment visual regions/lines
@@ -78,6 +80,7 @@ require('packer').startup(function(use)
   use 'fatih/vim-go'
   use 'simrat39/rust-tools.nvim'
 
+  use 'folke/neodev.nvim'
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
