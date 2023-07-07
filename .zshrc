@@ -32,8 +32,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-eval "$(rbenv init - zsh)"
-
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 eval "$(zoxide init zsh)"
