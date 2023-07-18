@@ -12,11 +12,6 @@ alias gfa="git fetch --all"
 alias vim="nvim"
 alias tks="tmux kill-session"
 
-alias dc="docker compose -f docker-compose-ngrok.yml -f docker-compose.yml"
-alias datt="docker attach amplify-app-1"
-alias deab="docker exec -it amplify-app-1 bash"
-alias fixtest="RAILS_ENV=test rails db:setup && RAILS_ENV=test bundle exec rake assets:precompile"
-
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
@@ -40,3 +35,4 @@ eval "$(zoxide init zsh)"
 export PNPM_HOME="/Users/chris/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"

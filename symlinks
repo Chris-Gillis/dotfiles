@@ -4,4 +4,6 @@ ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/nvim/ ~/.config/
 ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/karabiner/ ~/.config/
 ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/yabai/ ~/.config/
 ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/skhd/ ~/.config/
+ln -s ~/Workspace/github.com/Chris-Gillis/dotfiles/kitty/ ~/.config/
+
 
